@@ -1,8 +1,7 @@
 import discord
-import os
 
 #this is repl.it version, so make sure you have a secret with your token in it. you can name it whatever you want
-token = os.environ["token"]
+token = "put bot token here"
 client = discord.Client()
 bot = "Bot_template#1234"
 
@@ -17,3 +16,4 @@ async def on_message(message):
     
   elif message.content.startswith("+quote"):
     
+client.run(token)
